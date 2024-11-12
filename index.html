@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sagar Ganiga - Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <img src="./images/logo-removebg-preview.png" alt="" id="logo" />
+        <ul id="side-menu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about" >About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <h1>Hi , I am <br /><span>Sagar Ganiga</span></h1>
+        <p>Full Stack Web Developer</p>
+      </div>
+    </header>
+    <!-- about me part -->
+    <section id="about">
+      <div class="row">
+        <div class="image">
+          <img src="./images/personal-image.jpeg" alt="users pic" />
+        </div>
+        <div class="about-me">
+          <h1 class="sub-title">About me</h1>
+          <p class="about-me-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            itaque repellat quae corporis sequi qui esse atque recusandae, nulla
+            tenetur quos maiores! Reiciendis.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="opentab('certification')">
+              Certifications
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Web Development</span><br />HTML ,CSS ,JavaScript ,
+                Node.js , Express.js ,EJS ,Jquery, React.js
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>Programming Languages</span><br />C , C++ , Java , Python
+                , MySQL, PSQL,MongoDB , Java, Python, PHP
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>Data Analysis</span><br />Numpy , MatplotLib, Seaborn,
+                Pandas ,Bookeh
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="certification">
+            <ul>
+              <li><span>Full Stack</span><br />Web Developer</li>
+            </ul>
+            <ul>
+              <li><span>Skill</span><br />2</li>
+            </ul>
+            <ul>
+              <li><span>Skill</span><br />3</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2022-2026 Bachelor of Engineering</span><br />R V Institue
+                of Technology and Management Bangalore<br />CGPA:8.6
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>2020-2022 Pre University Education</span><br />Sri
+                Venkatramana English Medium PU College Kundapur<br />Percentage
+                : 94%
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span>High School Education</span><br />V K R Acharya Memorial
+                English Medium High School Kundapur<br />SSLC Percentage:92.4%
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="services">
+      <div class="conatiner">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Web Development</h2>
+            <p>
+              Description: Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Quas, magnam.
+            </p>
+            <a href="#">learn More</a>
+          </div>
+          <div>
+            <h2>Web Development</h2>
+            <p>
+              Description: Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Quas, magnam.
+            </p>
+            <a href="#">learn More</a>
+          </div>
+          <div>
+            <h2>Web Development</h2>
+            <p>
+              Description: Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Quas, magnam.
+            </p>
+            <a href="#">learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="project-list">
+            <div class="projects">
+              <img src="./images/projects/images.jpeg" alt="project" />
+              <div class="layer">
+                <h3>Title</h3>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="projects">
+              <img src="./images/projects/images.jpeg" alt="project" />
+              <div class="layer">
+                <h3>Title</h3>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="projects">
+              <img src="./images/projects/tree-736885_640.jpg" alt="project2" />
+              <div class="layer">
+                <h3>Title</h3>
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- contact me -->
+     <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>ganigasagar7@gmail.com</p>
+            <p><i class="fa-regular fa-phone"></i>+91 996449904</p>
+            <div class="social-icons">
+              <a href="https://github.com/Sagar4276"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/sagar-ganiga-aa8512264"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://www.instagram.com/ganigasagar7/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="./images/Sagar Ganiga - Resume.pdf" download class="btn btn-2">Download CV</a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form action="">
+              <input type="text" name="name" placeholder="your name" required>
+              <input type="email" name="email"placeholder="example@gmail.com " required>
+              <textarea name="message" id="" rows="6" placeholer="your message"></textarea>
+              <button type="submit" class="btn btn-2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
