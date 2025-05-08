@@ -1,0 +1,87 @@
+/* Netflix-inspired gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-netflix-gradient {
+  background: linear-gradient(-45deg, #111, #333, #e50914, #333);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+/* Tailwind isn't enough to handle complex animations & transforms */
+
+/* 3D Perspective */
+.perspective-400 {
+  perspective: 400px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Netflix-style radial gradient */
+.bg-radial-gradient {
+  background: radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.8) 80%);
+}
+
+/* Advanced scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e50914;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b20710;
+}
+
+/* Netflix fade effect */
+.fade-bottom {
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%, transparent 100%);
+}
+
+/* Custom Tab Animation */
+.tab-links.active-link::after {
+  content: '';
+  width: 50%;
+  height: 2px;
+  background: #e50914;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: 0.5s;
+}
+
+/* Spin animation for loading */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin 3s linear infinite;
+}
